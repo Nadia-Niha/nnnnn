@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Register - MediCare</title><link rel="stylesheet" href="style.css" /></head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><svg viewBox="0 0 48 48" width="36" height="36"><rect rx="8" width="48" height="48" fill="#00a6ff"/><path d="M12 26c0-5.5 4.5-10 10-10s10 4.5 10 10v8H12v-8z" fill="#fff"/></svg><div class="brand-text"><h1>MediCare</h1><small>Register</small></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="login.html">Login</a><a href="requirements.html">Requirements</a></nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card" style="padding:20px; max-width:700px; margin:0 auto;">
+        <h2>Patient Registration</h2>
+        <p>Fill required details. (Note: frontend demo only — no backend)</p>
+        <form onsubmit="event.preventDefault(); alert('Registration submitted (demo).');">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <input placeholder="Full name" required />
+            <input type="email" placeholder="Email" required />
+            <input placeholder="Phone" required />
+            <input type="text" placeholder="National ID / Passport" />
+            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Confirm password" required />
+          </div>
+          <div style="margin-top:12px; display:flex; gap:10px;">
+            <button class="btn primary" type="submit">Register</button>
+            <a class="btn ghost" href="login.html">Already have account? Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div>MediCare Demo</div></div></div></footer>
+</body>
+</html>
