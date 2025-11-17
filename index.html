@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MediCare — Hospital Management System </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 48" width="40" height="40" aria-hidden><rect rx="8" width="48" height="48" fill="#00a6ff"/><path d="M12 26c0-5.5 4.5-10 10-10s10 4.5 10 10v8H12v-8z" fill="#fff" opacity="0.95"/></svg>
+        <div class="brand-text">
+          <h1>MediCare</h1>
+          <small>Hospital Management System </small>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="history.html">Medical History</a>
+        <a href="reminders.html">Reminders</a>
+        <a href="requirements.html" class="cta">Requirements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Modern Hospital Management — Built for clinics & hospitals</h2>
+          <p>Streamline patient registration, appointments, billing, bed management, and reporting — a frontend demo inspired by BDTASK design language. No backend required to view UI & flows.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="register.html">Get Started</a>
+            <a class="btn ghost" href="requirements.html">View Requirements</a>
+          </div>
+          <ul class="features-list">
+            <li>Role-based dashboards</li>
+            <li>Real-time updates </li>
+            <li>Reports, logs & notifications</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <!-- Simulated dashboard card -->
+          <div class="dash-card">
+            <div class="dash-header">
+              <h3>Admin Dashboard (Preview)</h3>
+              <small>Live metrics</small>
+            </div>
+            <div class="dash-grid">
+              <div class="metric">
+                <div class="metric-value">1,240</div>
+                <div class="metric-label">Total Patients</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">362</div>
+                <div class="metric-label">Appointments</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">$18,420</div>
+                <div class="metric-label">Revenue (M)</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">12</div>
+                <div class="metric-label">Active Doctors</div>
+              </div>
+            </div>
+            <div class="mini-chart">
+              <svg viewBox="0 0 100 40" preserveAspectRatio="none" class="chart-svg">
+                <polyline points="0,30 15,20 30,22 45,12 60,18 75,8 90,14 100,10" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modules / Services -->
+    <section class="modules section">
+      <div class="container">
+        <h2 class="section-title">Key Modules</h2>
+        <p class="section-sub">Everything a clinic/hospital needs — presented as frontend modules</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon">👨‍⚕️</div>
+            <h3>Doctor Management</h3>
+            <p>Manage doctors, schedules, specialties and daily roster.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🧾</div>
+            <h3>Billing & Insurance</h3>
+            <p>Invoices, payments and insurance claims overview (demo).</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📅</div>
+            <h3>Appointments</h3>
+            <p>Book, reschedule or cancel — with double-book prevention (UI).</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📊</div>
+            <h3>Reports & Analytics</h3>
+            <p>Exportable performance reports, charts and filters.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🔒</div>
+            <h3>Roles & Security</h3>
+            <p>Role-based UI elements and admin audit logs (simulated).</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🔔</div>
+            <h3>Notifications</h3>
+            <p>Email/SMS reminders (frontend demo controls provided).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo content: quick forms -->
+    <section class="demo-forms section">
+      <div class="container">
+        <h2 class="section-title">Quick Demo</h2>
+        <div class="demo-grid">
+          <div class="demo-box">
+            <h4>Search Patient</h4>
+            <input id="searchInput" placeholder="Search by name or ID" />
+            <div id="searchResult" class="result">No results — demo only.</div>
+          </div>
+          <div class="demo-box">
+            <h4>Book Appointment</h4>
+            <select id="dept">
+              <option>Choose Department</option>
+              <option>General Medicine</option>
+              <option>Cardiology</option>
+              <option>Pediatrics</option>
+            </select>
+            <input type="date" id="apptDate" />
+            <button class="btn" onclick="demoBook()">Book (Demo)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="cta-section">
+      <div class="container cta-grid">
+        <div>
+          <h3>Ready to preview full UI?</h3>
+          <p>Explore pages: Register, Login, Appointment, Medical History, Reminders and Requirements (complete user stories included).</p>
+        </div>
+        <div>
+          <a class="btn primary" href="requirements.html">Open Requirements</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>MediCare</strong><br/>
+          2025 © Demo — UI only
+        </div>
+        <div>
+          <strong>Contact</strong><br/>
+          demo@example.com<br/>+880 1234 567890
+        </div>
+        <div>
+          <strong>Quick Links</strong><br/>
+          <a href="index.html">Home</a> · <a href="requirements.html">Requirements</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
