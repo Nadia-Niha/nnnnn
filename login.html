@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Login - MediCare</title><link rel="stylesheet" href="style.css" /></head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><svg viewBox="0 0 48 48" width="36" height="36"><rect rx="8" width="48" height="48" fill="#00a6ff"/><path d="M12 26c0-5.5 4.5-10 10-10s10 4.5 10 10v8H12v-8z" fill="#fff"/></svg><div class="brand-text"><h1>MediCare</h1><small>Login</small></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="register.html">Register</a><a href="requirements.html">Requirements</a></nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card" style="max-width:420px; margin:0 auto; padding:20px;">
+        <h2>Login</h2>
+        <form onsubmit="event.preventDefault(); loginDemo();">
+          <input id="loginEmail" type="text" placeholder="Email or username" required />
+          <input id="loginPass" type="password" placeholder="Password" required />
+          <div style="display:flex; gap:10px; margin-top:12px;">
+            <button class="btn primary" type="submit">Login</button>
+            <a class="btn ghost" href="register.html">Create account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div>MediCare Demo — frontend only</div></div></div></footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
